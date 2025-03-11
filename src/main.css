@@ -1,5 +1,5 @@
 :root {
-    --background-color: #FFF2F2;
+    --background-color: #fff;
     --background-color-2: #7886C7;
     --background-color-3: #2D336B;
     --nav-color: #7886C7;
@@ -108,3 +108,8 @@ nav {
     transition: 1s;
 }
 
+
+.container {
+    width: max-content;
+    margin-inline: auto;
+}
