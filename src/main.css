@@ -1,10 +1,15 @@
 :root {
     --background-color: #fff;
     --background-color-2: #7886C7;
-    --background-color-3: #2D336B;
     --nav-color: #7886C7;
     --text-color: #fff;
     --hover-color: #2D336B;
+    
+    /* --body-color: #5a5a5a;
+    --secondary-color: #01001a;
+    --primary-color: #0160ff;
+    --white-color: rgb(192, 238, 250);
+    --title-color: #1b3764; */
 }
 
 * {
@@ -106,10 +111,4 @@ nav {
     background-color: var(--hover-color);
     color: var(--text-color);
     transition: 1s;
-}
-
-
-.container {
-    width: max-content;
-    margin-inline: auto;
 }

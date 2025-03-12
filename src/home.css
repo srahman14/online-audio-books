@@ -1,29 +1,32 @@
 .hero-section {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    padding: 8rem;
+    gap: 0rem;
+    padding: 6rem;
     align-items: center;
     justify-content: center;
+    /* margin-top: 6rem; */
+    background-color: var(--nav-color);
 }
 
 .left-hero h1 {
-    font-size: 2.4rem;
+    font-size: 3.9rem;
     margin-bottom: 3rem;
     text-align: left;
     width: 20ch;
+    letter-spacing: -0.06ch;
 }
 
-.left-hero .audiobooks {
+/* .left-hero .audiobooks {
     text-decoration-line: underline;
     text-decoration-style: double;
-    text-decoration-color: var(--nav-color);
+    text-decoration-color: var(--hover-color);
     text-decoration-thickness: 4px;
-}
+} */
 
-.left-hero .voxbooks {
+.left-hero .gradient-span {
     background: #121FCF;
-    background: linear-gradient(to right, var(--hover-color) 0%, var(--nav-color) 100%);
+    background: linear-gradient(to right, #f1f1f1 0%, #949bf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -37,31 +40,116 @@
 }
 
 .cta-buttons a {
-    background-color: var(--nav-color);
+    background-color: var(--hover-color);
     text-decoration: none;
     font-weight: 600;
     border-radius: 10px;
     padding: 1rem;
     color: var(--text-color);
     transition: 0.6s;
-    -webkit-box-shadow: 10px 10px 82px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 82px -7px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 82px -7px rgba(0,0,0,0.75);
 }
 
 
 .cta-buttons a:hover {
-    background-color: var(--hover-color);
+    background-color: #000;
     color: var(--text-color);
     transition: 1s;
 }
 
 .hero-section .right-hero img {
-    width: 60rem;
+    width: 30rem;
 }
 
 .featured-audiobooks {
     margin-top: 18rem;
     margin-bottom: 8rem; 
+    width: max-content;
+    margin-inline: auto;
 }
 
+.featured-container {
+    width: 100rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.featured-audiobooks header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.featured-audiobooks .featured-container .left-title h1 {
+    font-size: 1.6rem;
+    text-decoration-line: underline;
+    margin-bottom: 10px;
+    text-decoration-thickness: 3px;
+    text-underline-offset: -0.4px;
+    text-decoration-color: var(--hover-color);
+    letter-spacing: -0.1ch;
+}
+
+.featured-audiobooks .featured-container .left-title p {
+    width: 65ch;
+    color: #aaa8a8;
+    letter-spacing: -0.1ch;
+}
+
+.featured-audiobooks .featured-container .audiobooks-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.audiobooks-items .item {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.audiobooks-items .item img {
+    width: 15rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+} 
+
+.audiobooks-items .item:nth-child(1) {
+    background-color: #b0b3c5;
+}
+
+.audiobooks-items .item:nth-child(2) {
+    background-color: #e6bd97;
+}
+
+.audiobooks-items .item:nth-child(3) {
+    background-color: #8f7cfa;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        gap: 1rem;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    
+    .left-hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+        text-align: left;
+        width: 20ch;
+    }
+
+    .hero-section .right-hero img {
+        width: 10rem;
+    }
+}
