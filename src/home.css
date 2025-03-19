@@ -67,7 +67,7 @@
     margin-inline: auto;
 }
 
-.featured-container {
+.featured-audiobooks-container{
     width: 100rem;
     margin: 2rem;
     padding: 2rem;
@@ -82,23 +82,23 @@
     background-color: #fff;
 }
 
-.featured-audiobooks .featured-container .left-title h1 {
+.featured-audiobooks .featured-audiobooks-container .left-title h1 {
     font-size: 1.6rem;
     text-decoration-line: underline;
     margin-bottom: 10px;
     text-decoration-thickness: 3px;
-    text-underline-offset: -0.4px;
+    text-underline-offset: -0.1px;
     text-decoration-color: var(--hover-color);
     letter-spacing: -0.1ch;
 }
 
-.featured-audiobooks .featured-container .left-title p {
+.featured-audiobooks .featured-audiobooks-container .left-title p {
     width: 65ch;
     color: #aaa8a8;
     letter-spacing: -0.1ch;
 }
 
-.featured-audiobooks .featured-container .audiobooks-items {
+.featured-audiobooks .featured-audiobooks-container .audiobooks-items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,10 +113,13 @@
     border-radius: 10px;
     text-align: center;
 }
+
 .audiobooks-items .item img {
     width: 15rem;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: 0.6s;
+    padding: 0.6rem;
 } 
 
 .audiobooks-items .item:nth-child(1) {
@@ -131,8 +134,69 @@
     background-color: #8f7cfa;
 }
 
+.audiobooks-items .item img:hover {
+    padding: 1.2rem;
+    transition: 1s;
+
+}
+
+.featured-testimonals {
+    background: var(--background-color-3);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
 
 
+.featured-testimonals .featured-container-testimonals {
+    width: 100vh;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.featured-container-testimonals .left-testimonal {
+    flex: 1;
+}
+
+.featured-container-testimonals .right-testimonal {
+    flex: 1;
+}
+.featured-container-testimonals .left-testimonal p {
+    width: 65ch;
+    color: gray;
+    letter-spacing: -0.1ch;
+    margin-top: 1.4rem;
+}
+
+.featured-container-testimonals .left-testimonal h1 {
+    letter-spacing: -0.1ch;
+}
+
+.featured-news {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.news-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-news .featured-news-container .news-items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 768px) {
     .hero-section {
