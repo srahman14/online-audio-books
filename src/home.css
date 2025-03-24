@@ -1,20 +1,20 @@
 .hero-section {
-    display: flex;
-    flex-direction: row;
-    gap: 0rem;
-    padding: 6rem;
-    align-items: center;
-    justify-content: center;
-    /* margin-top: 6rem; */
-    background-color: var(--nav-color);
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 6rem; */
+  background-color: var(--nav-color);
 }
 
 .left-hero h1 {
-    font-size: 3.9rem;
-    margin-bottom: 3rem;
-    text-align: left;
-    width: 20ch;
-    letter-spacing: -0.06ch;
+  font-size: 3.9rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  width: 20ch;
+  letter-spacing: -0.06ch;
 }
 
 /* .left-hero .audiobooks {
@@ -25,195 +25,352 @@
 } */
 
 .left-hero .gradient-span {
-    background: #121FCF;
-    background: linear-gradient(to right, #f1f1f1 0%, #949bf8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: #121fcf;
+  background: linear-gradient(to right, #f1f1f1 0%, #949bf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .left-hero .cta-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .cta-buttons a {
-    background-color: var(--hover-color);
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 1rem;
-    color: var(--text-color);
-    transition: 0.6s;
+  background-color: var(--hover-color);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--text-color);
+  transition: 0.6s;
 }
 
-
 .cta-buttons a:hover {
-    background-color: #000;
-    color: var(--text-color);
-    transition: 1s;
+  background-color: #000;
+  color: var(--text-color);
+  transition: 1s;
 }
 
 .hero-section .right-hero img {
-    width: 30rem;
+  width: 30rem;
 }
 
 .featured-audiobooks {
-    margin-top: 18rem;
-    margin-bottom: 8rem; 
-    width: max-content;
-    margin-inline: auto;
+  margin-top: 18rem;
+  margin-bottom: 8rem;
+  width: max-content;
+  margin-inline: auto;
 }
 
-.featured-audiobooks-container{
-    width: 100rem;
-    margin: 2rem;
-    padding: 2rem;
+.featured-audiobooks-container {
+  width: 90rem;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .featured-audiobooks header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
 }
 
 .featured-audiobooks .featured-audiobooks-container .left-title h1 {
-    font-size: 1.6rem;
-    text-decoration-line: underline;
-    margin-bottom: 10px;
-    text-decoration-thickness: 3px;
-    text-underline-offset: -0.1px;
-    text-decoration-color: var(--hover-color);
-    letter-spacing: -0.1ch;
+  font-size: 1.6rem;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+  text-decoration-thickness: 3px;
+  text-underline-offset: -0.1px;
+  text-decoration-color: var(--hover-color);
+  letter-spacing: -0.1ch;
 }
 
 .featured-audiobooks .featured-audiobooks-container .left-title p {
-    width: 65ch;
-    color: #aaa8a8;
-    letter-spacing: -0.1ch;
+  width: 65ch;
+  color: #aaa8a8;
+  letter-spacing: -0.1ch;
 }
 
 .featured-audiobooks .featured-audiobooks-container .audiobooks-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5rem;
-    padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem;
 }
 
 .audiobooks-items .item {
-    background-color: #f1f1f1;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .audiobooks-items .item img {
-    width: 15rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    transition: 0.6s;
-    padding: 0.6rem;
-} 
+  width: 15rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: 0.6s;
+  padding: 0.6rem;
+}
 
 .audiobooks-items .item:nth-child(1) {
-    background-color: #b0b3c5;
+  background-color: #b0b3c5;
 }
 
 .audiobooks-items .item:nth-child(2) {
-    background-color: #e6bd97;
+  background-color: #e6bd97;
 }
 
 .audiobooks-items .item:nth-child(3) {
-    background-color: #8f7cfa;
+  background-color: #8f7cfa;
 }
 
 .audiobooks-items .item img:hover {
-    padding: 1.2rem;
-    transition: 1s;
-
+  padding: 1.2rem;
+  transition: 1s;
 }
 
 .featured-testimonals {
-    background: var(--background-color-3);
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8rem;
+  background: var(--background-color-3);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
 }
 
-
 .featured-testimonals .featured-container-testimonals {
-    width: 100vh;
-    margin: 2rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
+  width: 100vh;
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .featured-container-testimonals .left-testimonal {
-    flex: 1;
+  flex: 1;
 }
 
 .featured-container-testimonals .right-testimonal {
-    flex: 1;
+  flex: 1;
 }
 .featured-container-testimonals .left-testimonal p {
-    width: 65ch;
-    color: gray;
-    letter-spacing: -0.1ch;
-    margin-top: 1.4rem;
+  width: 65ch;
+  color: gray;
+  letter-spacing: -0.1ch;
+  margin-top: 1.4rem;
 }
 
 .featured-container-testimonals .left-testimonal h1 {
-    letter-spacing: -0.1ch;
+  letter-spacing: -0.1ch;
 }
 
 .featured-news {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
 }
 
+.feautred-news .featured-news-container {
+  width: 90rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+/* .news-items {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+/* .featured-news .featured-news-container .news-items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Featured News Section */
+.featured-news {
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1200px; /* Ensures the section has a max width */
+}
+
+/* Section Header */
+.featured-container-news h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
 .news-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default: 2 blogs per row */
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Each News Item */
+.news-items .item {
+  background: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* News Item Image */
+.news-items .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Date Caption */
+.news-items .item caption {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* News Title */
+.news-items .item h1 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+/* Read More Button */
+.news-items .item a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.news-items .item a:hover {
+  background-color: #0056b3;
+}
+
+/* Hover Effect */
+.news-items .item:hover {
+  transform: translateY(-5px);
+}
+
+.featured-promotions {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.feautred-promotions .featured-container-promotions {
+  width: 90rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.featured-container-promotions #title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.featured-container-promotions .item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 2rem;
+    margin: 1rem;
+    gap: 2rem;
 }
 
-.featured-news .featured-news-container .news-items .item {
-    display: flex;
-    flex-direction: column;
+.featured-container-promotions .item .left-image img {
+    width: 20rem;
+}
+
+.featured-container-promotions .item .right-text {
+    padding: 2rem;
+    margin: 1rem;
     justify-content: center;
-    align-items: center;
+}
+
+.featured-container-promotions .item .right-text h1 {
+    font-size: 1.6rem;
+}
+
+.featured-container-promotions .item .right-text #price {
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: bold;
+    letter-spacing: -0.09ch;
+}
+
+.featured-container-promotions .item .right-text #exercpt {
+    font-size: 1.4rem;
+    width: 20ch;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.featured-container-promotions .item .right-text a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    letter-spacing: -0.09ch;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.featured-container-promotions .item .right-text a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .news-items {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-section {
-        gap: 1rem;
-        padding: 2rem;
-        align-items: center;
-    }
+  .hero-section {
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+  }
 
-    
-    .left-hero h1 {
-        font-size: 1.4rem;
-        margin-bottom: 3rem;
-        text-align: left;
-        width: 20ch;
-    }
+  .left-hero h1 {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    width: 20ch;
+  }
 
-    .hero-section .right-hero img {
-        width: 10rem;
-    }
+  .hero-section .right-hero img {
+    width: 10rem;
+  }
 }
