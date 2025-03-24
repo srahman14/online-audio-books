@@ -187,19 +187,6 @@
   padding: 2rem;
 }
 
-/* .news-items {
-  display: grid;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* .featured-news .featured-news-container .news-items .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 /* Featured News Section */
 .featured-news {
   margin: 4rem auto;
@@ -269,86 +256,150 @@
   background-color: #0056b3;
 }
 
-/* Hover Effect */
 .news-items .item:hover {
   transform: translateY(-5px);
 }
 
 .featured-promotions {
+  margin-top: 22rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
   margin-bottom: 8rem;
 }
 
-.feautred-promotions .featured-container-promotions {
-  width: 90rem;
-  margin: 2rem;
+.featured-promotions {
+  margin-top: 5rem;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.featured-container-promotions {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .featured-container-promotions #title {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--nav-color);
+  width: 100%;
 }
 
 .featured-container-promotions .item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem;
-    margin: 1rem;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+  width: 48%;
+  min-width: 350px;
+  gap: 1.5rem;
 }
 
 .featured-container-promotions .item .left-image img {
-    width: 20rem;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .featured-container-promotions .item .right-text {
-    padding: 2rem;
-    margin: 1rem;
-    justify-content: center;
-}
-
-.featured-container-promotions .item .right-text h1 {
-    font-size: 1.6rem;
+  flex: 1;
+  padding: 1rem;
 }
 
 .featured-container-promotions .item .right-text #price {
-    font-size: 3rem;
-    margin: 1rem;
-    font-weight: bold;
-    letter-spacing: -0.09ch;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .featured-container-promotions .item .right-text #exercpt {
-    font-size: 1.4rem;
-    width: 20ch;
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
 .featured-container-promotions .item .right-text a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    border-radius: 5px;
-    font-size: 1.4rem;
-    letter-spacing: -0.09ch;
-    font-weight: 600;
-    transition: background 0.3s ease-in-out;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease-in-out;
 }
 
 .featured-container-promotions .item .right-text a:hover {
   background-color: #0056b3;
 }
 
+.featured-container-promotions .item:last-child {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+  background: #97ade6;
+}
+
+.featured-container-promotions .item:last-child .left-text {
+    margin: 2rem;
+    padding: 4rem;
+}
+
+.featured-container-promotions .item:last-child .left-text h1 {
+    width: 16ch;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.featured-container-promotions .item:last-child .left-text a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: -0.09ch;
+    transition: background 0.3s ease-in-out;
+}
+.featured-container-promotions .item:last-child .left-text a:hover {
+    background-color: #0056b3;
+  }
+
+  
+.featured-container-promotions .item:last-child .right-image img {
+    width: 22rem;
+    margin: 2rem;
+    margin-right: 4rem;
+    border-radius: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+  .featured-container-promotions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-container-promotions .item {
+    width: 100%;
+  }
+}
 /* Responsive Layout */
 @media (max-width: 768px) {
   .news-items {
