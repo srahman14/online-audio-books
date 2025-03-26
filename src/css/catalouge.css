@@ -1,0 +1,56 @@
+main section header {
+    background-color: #fff;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.catalouge-container  {
+    margin-top: 0;
+}
+.catalouge-container .filters {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.catalouge-container .filters .filter-option {
+    background: var(--background-color-2);
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+
+.catalouge-container .book-container {
+    background: #555;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.book-container .item-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-container .item-book img {
+    width: 18rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.book-container .item-book p {
+    margin-inline: auto;
+    color: var(--text-color);
+    letter-spacing: -0.09ch;
+    font-size: 1.2rem;
+}
