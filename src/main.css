@@ -113,3 +113,36 @@ nav {
     color: var(--text-color);
     transition: 1s;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--background-color-2);
+    height: 20vh;
+}
+
+footer p {
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+footer aside {
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 1.4rem;
+}
+
+footer aside a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+footer aside a:hover {
+    color: var(--hover-color);
+    transition: 0.6s;
+}
