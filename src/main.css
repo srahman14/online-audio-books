@@ -55,6 +55,13 @@ nav {
     gap: 1rem;
 }
 
+.left-side h1 {
+    background: #121fcf;
+    background: linear-gradient(to right, #f1f1f1 0%, #949bf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .left-side span i {
     font-size: 2rem;
 }
@@ -113,6 +120,7 @@ nav {
     color: var(--text-color);
     transition: 1s;
 }
+
 
 footer {
     display: flex;
