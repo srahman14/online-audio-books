@@ -1,56 +1,121 @@
 main section header {
-    background-color: #fff;
-    margin: 2rem;
-    padding: 2rem;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 2rem;
 }
 
-.catalouge-container  {
-    margin-top: 0;
+.catalouge-container {
+    margin: 0;
 }
+
 .catalouge-container .filters {
-    margin: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .catalouge-container .filters .filter-option {
-    background: var(--background-color-2);
-    padding: 0.6rem;
-    border-radius: 8px;
+  background: var(--background-color-2);
+  padding: 0.6rem;
+  border-radius: 8px;
 }
-
 
 .catalouge-container .book-container {
-    background: #555;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  overflow-x: auto;
 }
 
-.book-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4rem;
+.catalog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.catalog-table th,
+.catalog-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.catalog-table th {
+  background-color: var(--nav-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.catalog-table td img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
 .book-container .item-book {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .book-container .item-book img {
-    width: 18rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+  width: 18rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .book-container .item-book p {
-    margin-inline: auto;
-    color: var(--text-color);
-    letter-spacing: -0.09ch;
-    font-size: 1.2rem;
+  margin-inline: auto;
+  color: var(--text-color);
+  letter-spacing: -0.09ch;
+  font-size: 1.2rem;
+}
+
+/* Buy Button */
+.buy-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .catalog-table {
+    font-size: 1rem;
+  }
+
+  .catalog-table th,
+  .catalog-table td {
+    padding: 0.8rem;
+  }
+
+  .catalog-table td img {
+    width: 80px;
+  }
+
+  .buy-button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
