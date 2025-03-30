@@ -111,18 +111,24 @@
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  width: 16rem;
+  height: 26rem;
 }
 
 .audiobooks-items .item img {
-  width: 15rem;
+  width: 14rem;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   transition: 0.6s;
   padding: 0.6rem;
 }
 
+.audiobooks-items .item h1 {
+  font-size: 1.3rem;
+}
+
 .audiobooks-items .item:nth-child(1) {
-  background-color: #b0b3c5;
+  background-color: #576eec;
 }
 
 .audiobooks-items .item:nth-child(2) {
@@ -130,7 +136,26 @@
 }
 
 .audiobooks-items .item:nth-child(3) {
+  background-color: #7ccefa;
+}
+.audiobooks-items .item:nth-child(4) {
+  background-color: #d8fa7c;
+}
+
+.audiobooks-items .item:nth-child(5) {
+  background-color: #faef7c;
+}
+
+.audiobooks-items .item:nth-child(6) {
+  background-color: #fa7c7c;
+}
+
+.audiobooks-items .item:nth-child(7) {
   background-color: #8f7cfa;
+}
+
+.audiobooks-items .item:nth-child(8) {
+  background-color: #f5c0b8;
 }
 
 .audiobooks-items .item img:hover {
@@ -162,10 +187,22 @@
 
 .featured-container-testimonals .right-testimonal {
   flex: 1;
+  align-content: center;
+  justify-content: center;
 }
+
+.featured-container-testimonals .right-testimonal p {
+  color: var(--background-color-1);
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin: 0.6rem;
+}
+
+
 .featured-container-testimonals .left-testimonal p {
-  width: 65ch;
-  color: gray;
+  width: 45ch;
+  font-size: 1.2rem;
+  color: #000;
   letter-spacing: -0.1ch;
   margin-top: 1.4rem;
 }
@@ -319,12 +356,27 @@
   padding: 1rem;
 }
 
-.featured-container-promotions .item .right-text #price {
+.featured-container-promotions .item .right-text .price {
   font-size: 2rem;
   font-weight: bold;
 }
 
+.right-text h1#author {
+  margin-bottom: 10px;
+}
+
+.right-text .price#old-price {
+  text-decoration: line-through;
+  font-weight: norm;
+}
+
+.right-text .price#new-price {
+  color: #e64141eb;
+  margin-left: 10px;
+}
+
 .featured-container-promotions .item .right-text #exercpt {
+  margin-top: 10px;
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 1.5rem;
