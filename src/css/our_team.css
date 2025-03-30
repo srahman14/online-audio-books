@@ -1,0 +1,11 @@
+.our-team-section .our-team-container h1 {
+    font-size: 4rem;
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 2rem;
+}
