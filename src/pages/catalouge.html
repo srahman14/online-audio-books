@@ -45,17 +45,25 @@
         <!--Holds all catalouges -->
         <section>   
             <div class="catalouge-container">
-                <header>
+                <div id="catalouge-title">
                     <h1>Featured Catalogues</h1>
                     <p>Explore our finest audiobooks for your liking. A book for everyone, an expereince not to be missed.</p>
-                </header>
-    
+                    <p>Our audiobook catalogue features a wide range of genres, catering to diverse
+                    tastes and preferences. Below is a list of some popular categories and
+                    example audiobooks available along with their prices:</p>
+                </div>
+                
                 <div class="filters">
-                    <div class="filter-option"><p>All</p></div>
-                    <div class="filter-option"><p>Action</p></div>
-                    <div class="filter-option"><p>Sci-Fi</p></div>
-                    <div class="filter-option"><p>History</p></div>
-                    <div class="filter-option"><p>Poetry</p></div>
+                    <button data-filter="all" class="filter-option"><p>All</p></button>
+                    <button data-filter="fiction" class="filter-option"><p>Fiction</p></button> 
+                    <button data-filter="non-fiction" class="filter-option"><p>Non-Fiction</p></button>
+                    <button data-filter="sci-fi" class="filter-option"><p>Sci-Fi & Fantasy</p></button>
+                    <button data-filter="self-help" class="filter-option"><p>Self-Help & Personal Development</p></button>
+                    <button data-filter="children" class="filter-option"><p>Children's Books</p></button>
+                    <button data-filter="romance" class="filter-option"><p>Romance</p></button>
+                    <button data-filter="mystery" class="filter-option"><p>Mystery & Thriller</p></button>
+                    <button data-filter="history" class="filter-option"><p>History</p></button>
+
                 </div>
 
                 <div class="book-container">
@@ -66,51 +74,114 @@
                                 <th>Title</th>
                                 <th>Author</th>
                                 <th>Price</th>
-                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
-                                <td><p>Silence</p></td>
-                                <td>Author of Book</td>
-                                <td>£29.00</td>
-                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            <tr data-category="fiction">
+                                <td><img src="../assets/the-great-gatsby.jpg" alt="book-image"></td>
+                                <td><p>The Great Gatsby</p></td>
+                                <td>F. Scott Fitzgerald</td>
+                                <td>£7.99</td>
                             </tr>
-                            <tr>
-                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
-                                <td>Title of Book</td>
-                                <td>Author of Book</td>
-                                <td>£29.00</td>
-                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            <tr data-category="fiction mystery">
+                                <td><img src="../assets/to-kill-a-mocking-bird.jpg" alt="book-image"></td>
+                                <td>To Kill a Mockingbird</td>
+                                <td>Harper Lee</td>
+                                <td>£9.99</td>
                             </tr>
 
-                            <tr>
-                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
-                                <td>Title of Book</td>
-                                <td>Author of Book</td>
-                                <td>£29.00</td>
-                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            <tr data-category="fiction sci-fi">
+                                <td><img src="../assets/1984.jpg" alt="book-image"></td>
+                                <td>1984</td>
+                                <td>George Orwell</td>
+                                <td>£8.49</td>
                             </tr>
 
 
-                            <tr>
-                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
-                                <td>Title of Book</td>
-                                <td>Author of Book</td>
-                                <td>£29.00</td>
-                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            <tr data-category="non-fiction">
+                                <td><img src="../assets/sapiens-a-brief-history-of-humankind.jpg" alt="book-image"></td>
+                                <td>Sapiens: A Brief History of Humankind</td>
+                                <td>Yuval Noah Harari</td>
+                                <td>£12.99</td>
                             </tr>
 
-                            <tr>
-                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
-                                <td>Title of Book</td>
-                                <td>Author of Book</td>
-                                <td>£29.00</td>
-                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            <tr data-category="non-fiction">
+                                <td><img src="../assets/educated.jpg" alt="book-image"></td>
+                                <td>Educated</td>
+                                <td>Tara Westover</td>
+                                <td>£10.99</td>
                             </tr>
 
-                            
+                            <tr data-category="non-fiction">
+                                <td><img src="../assets/becoming.jpg" alt="book-image"></td>
+                                <td>Becoming</td>
+                                <td>Michelle Obama</td>
+                                <td>£11.48</td>
+                            </tr>
+
+                            <tr data-category="sci-fi">
+                                <td><img src="../assets/dune.jpg" alt="book-image"></td>
+                                <td>Dune</td>
+                                <td>Frank Herbet</td>
+                                <td>£9.49</td>
+                            </tr>
+
+                            <tr data-category="sci-fi children">
+                                <td><img src="../assets/the-hobbit.jpg" alt="book-image"></td>
+                                <td>The Hobbit</td>
+                                <td>J.R.R Tolkien</td>
+                                <td>£9.49</td>
+                            </tr>
+
+                            <tr data-category="sci-fi">
+                                <td><img src="../assets/enders-game.jpg" alt="book-image"></td>
+                                <td>Ender's Game</td>
+                                <td>Orson Scott Card</td>
+                                <td>£8.99</td>
+                            </tr>
+
+                            <tr data-category="self-help">
+                                <td><img src="../assets/atomic-habits.jpg" alt="book-image"></td>
+                                <td>Atomic Habits</td>
+                                <td>James Clear</td>
+                                <td>£8.99</td>
+                            </tr>
+
+                            <tr data-category="self-help">
+                                <td><img src="../assets/the-power-of-now.jpg" alt="book-image"></td>
+                                <td>The Power of Now</td>
+                                <td>Eckhart Tolle</td>
+                                <td>£9.99</td>
+                            </tr>
+
+                            <tr data-category="self-help">
+                                <td><img src="../assets/how-to-win-friends-and-influence-people.jpg" alt="book-image"></td>
+                                <td>How to Win Friends and Influence People</td>
+                                <td>Dale Carnegie</td>
+                                <td>£7.99</td>
+                            </tr>
+
+                            <tr data-category="children mystery sci-fi">
+                                <td><img src="../assets/harry-potter-and-the-philosophers-stone.jpg" alt="book-image"></td>
+                                <td>Harry Potter and the Philosopher's Stone</td>
+                                <td>J.K Rowling</td>
+                                <td>£8.99</td>
+                            </tr>
+
+                            <tr data-category="children fiction">
+                                <td><img src="../assets/charlottes-web.jpg" alt="book-image"></td>
+                                <td>Charlotte's Web</td>
+                                <td>E.B White</td>
+                                <td>£6.99</td>
+                            </tr>
+
+
+                            <tr data-category="children fiction">
+                                <td><img src="../assets/matilda.jpg" alt="book-image"></td>
+                                <td>Matilda</td>
+                                <td>Roald Dahl</td>
+                                <td>£7.49</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -130,5 +201,7 @@
             <a href="#">Contact Us</a>
         </aside>
     </footer>
+
+    <script src="../../filter.js"></script>
 </body>
 </html>
