@@ -17,7 +17,7 @@
         <nav>
             <!--Left side, with logo and name of company-->
             <div class="left-side">
-                <a href="index.html" rel="noopener noreferrer">
+                <a href="../index.html" rel="noopener noreferrer">
                     <!-- <img src="assets/logo.png" alt="image logo"> -->
                     <span>
                         <i class="fa-solid fa-book"></i>
@@ -28,15 +28,15 @@
             <!--Right side with navigation buttons -->
             <div class="middle-side">
                 <ul>
-                    <li><a href="#" rel="noopener noreferrer" class="nav-button">Home</a></li>
-                    <li><a href="pages/catalouge.html" target=_blank rel="noopener noreferrer" class="nav-button">Catalogue</a></li>
-                    <li><a href="#" rel="noopener noreferrer" class="nav-button">News</a></li>
+                    <li><a href="../index.html" rel="noopener noreferrer" class="nav-button">Home</a></li>
+                    <li><a href="catalouge.html" rel="noopener noreferrer" class="nav-button">Catalogue</a></li>
+                    <li><a href="news.html" rel="noopener noreferrer" class="nav-button">News</a></li>
                     <li><a href="#" rel="noopener noreferrer" class="nav-button">Page</a></li>
                 </ul>
             </div>
 
             <div class="right-side">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="nav-button">Contact Us</a>
+                <a href="pages/register.html" rel="noopener noreferrer" class="nav-button">Register</a>
             </div>
         </nav>
     </header>
@@ -51,51 +51,74 @@
                 </header>
     
                 <div class="filters">
-                    <div class="filter-option">
-                        <p>All</p>
-                    </div>
-
-                    <div class="filter-option">
-                        <p>Action</p>
-                    </div>
-
-                    <div class="filter-option">
-                        Sci-Fi
-                    </div>
-
-                    <div class="filter-option">
-                        History
-                    </div>
-
-                    <div class="filter-option">
-                        Poetry
-                    </div>
+                    <div class="filter-option"><p>All</p></div>
+                    <div class="filter-option"><p>Action</p></div>
+                    <div class="filter-option"><p>Sci-Fi</p></div>
+                    <div class="filter-option"><p>History</p></div>
+                    <div class="filter-option"><p>Poetry</p></div>
                 </div>
 
                 <div class="book-container">
-                    <div class="item-book">
-                        <img src="../assets/book-image-1.jpg" alt="book-image">
-                        <p>Title of Book</p>
-                        <p>Author of Book</p>
-                        <p>Price of Book</p>
-                        <p>Button to buy</p>
-                    </div>
+                    <table class="catalog-table">
+                        <thead>
+                            <tr>
+                                <th>Book Cover</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
+                                <td><p>Silence</p></td>
+                                <td>Author of Book</td>
+                                <td>£29.00</td>
+                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
+                                <td>Title of Book</td>
+                                <td>Author of Book</td>
+                                <td>£29.00</td>
+                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            </tr>
 
-                    <div class="item-book">
-                        <img src="../assets/book-image-1.jpg" alt="book-image">
-                        <p>Title of Book</p>
-                        <p>Author of Book</p>
-                        <p>Price of Book</p>
-                        <p>Button to buy</p>
-                    </div>
+                            <tr>
+                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
+                                <td>Title of Book</td>
+                                <td>Author of Book</td>
+                                <td>£29.00</td>
+                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
+                                <td>Title of Book</td>
+                                <td>Author of Book</td>
+                                <td>£29.00</td>
+                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../assets/book-image-1.jpg" alt="book-image"></td>
+                                <td>Title of Book</td>
+                                <td>Author of Book</td>
+                                <td>£29.00</td>
+                                <td><a href="#" class="buy-button">Buy Now</a></td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-
         </section>
     </main>
 
 
-    <!-- <footer>
+    <footer>
         <p>&copy;2025 VoxBooks</p>
 
         <aside>
@@ -106,6 +129,6 @@
             <a href="#">Register</a>
             <a href="#">Contact Us</a>
         </aside>
-    </footer> -->
+    </footer>
 </body>
 </html>
