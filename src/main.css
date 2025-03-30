@@ -19,9 +19,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: var(--background-color);
     font-family: "Montserrat", "sans-serif";
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -77,10 +88,6 @@ nav {
     transition: 1s;
 }
 
-/* .left-side img {
-    border-radius: 50%;
-    width: 8rem;
-} */
 
 .middle-side {
     margin: 2rem;
@@ -127,7 +134,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     background: var(--background-color-2);
-    height: 20vh;
+    height: 10vh;
+    width: 100%;
 }
 
 footer p {
