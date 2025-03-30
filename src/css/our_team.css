@@ -1,5 +1,7 @@
-.our-team-section .our-team-container h1 {
-    font-size: 4rem;
+.our-team-section h1 {
+    margin: 2rem;
+    font-size: 1.8rem;
+    
 }
 
 .our-team-container {
@@ -8,4 +10,39 @@
     flex-wrap: wrap;
     margin: 2rem;
     padding: 2rem;
+    gap: 4rem;
 }
+
+.team-member {
+    padding: 2rem;
+    background: var(--background-color-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1.5rem;
+    width: 45%;
+}
+
+.team-member img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.team-member-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.team-member-content h1 {
+    font-size: 1.8rem;
+}
+
+.team-member-content p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+

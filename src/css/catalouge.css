@@ -1,11 +1,12 @@
-main section header {
+.catalouge-container {
   background-color: #fff;
   margin: 2rem;
   padding: 2rem;
 }
 
-.catalouge-container {
-    margin: 0;
+.catalouge-container #catalouge-title {
+  margin: 2rem;
+  padding: 1rem;
 }
 
 .catalouge-container .filters {
@@ -13,27 +14,39 @@ main section header {
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .catalouge-container .filters .filter-option {
   background: var(--background-color-2);
-  padding: 0.6rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.catalouge-container .filters .filter-option:hover {
+  background: var(--hover-color);
+  color: #fff;
 }
 
 .catalouge-container .book-container {
   padding: 2rem;
   margin: 2rem;
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   overflow-x: auto;
 }
 
 .catalog-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 2rem;
+  margin-top: 0;
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -44,7 +57,8 @@ main section header {
   border: 1px solid #ddd;
   padding: 1rem;
   text-align: left;
-  color: var(--text-color);
+  color: #000;
+  font-weight: bold;
   font-size: 1.2rem;
 }
 
@@ -80,23 +94,6 @@ main section header {
   color: var(--text-color);
   letter-spacing: -0.09ch;
   font-size: 1.2rem;
-}
-
-/* Buy Button */
-.buy-button {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  transition: background 0.3s ease-in-out;
-  text-align: center;
-}
-
-.buy-button:hover {
-  background-color: #0056b3;
 }
 
 /* Responsive Design */
