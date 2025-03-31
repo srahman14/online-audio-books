@@ -5,6 +5,9 @@
   background-color: white;
   width: 50rem;
   margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
 }
 
 /* Full-width input fields */
