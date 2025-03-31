@@ -40,6 +40,7 @@ main {
 
 header {
     background-color: var(--nav-color);
+    border-bottom: 10px solid var(--hover-color);
 }
 
 nav {
@@ -141,6 +142,17 @@ nav {
 #nav-menu ul ul li {
     float: none;
     font-size: 2rem;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+#nav-menu ul ul li:hover {
+    background: var(--hover-color);
+}
+#nav-menu ul ul li a:hover {
+    color: var(--text-color);
+    margin-left: 2em;
+    transition: 0.2s ease-out;
 }
 
 #nav-menu ul li:hover > ul {
@@ -153,9 +165,6 @@ nav {
     display: block;
     clear: both;
 }
-
-
-
 
 .right-side a {
     background-color: var(--text-color);
@@ -176,6 +185,7 @@ nav {
 
 
 footer {
+    border-top: 10px solid var(--hover-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -208,3 +218,9 @@ footer aside a:hover {
     color: var(--hover-color);
     transition: 0.6s;
 }
+
+@media (max-width: 900) {
+    body {
+        font-size: 90%;
+    }
+  }
