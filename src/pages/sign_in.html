@@ -6,7 +6,7 @@
     <title>Online Audio Books - Catalouges</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../css/our_team.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -49,63 +49,25 @@
     </header>
 
     <main>
-        <section class="our-team-section">
-            <h1>Meet the team</h1>
-            <article class="our-team-container">
-                <div class="team-member">
-                    <figure>
-                        <img src="../assets/default-icon.jpg" alt="">
-                    </figure>
+        <!--Register Form-->
+        <section> 
+            <form action="/action_page.php">
+                <div class="register-container">
+                  <h1>Sign In</h1>
+                  <p>Please fill in your details to login.</p>
+                  <hr>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-                    <div class="team-member-content">
-                        <h1>Jane Harris</h1>
-                        <p>Cheif Content Officer</p>
-                    </div>
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+                  <button type="submit" class="registerbtn">Sign In</button>
+                  <p class="signin">Don't have an account? <a href="register.html">Register</a>.</p>
                 </div>
 
-                <div class="team-member">
-                    <figure>
-                        <img src="../assets/default-icon.jpg" alt="">
-                    </figure>                    
-                    <div class="team-member-content">
-                        <h1>Tome Robers</h1>
-                        <p>Customer Support Manager</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <figure>
-                        <img src="../assets/default-icon.jpg" alt="">
-                    </figure>                     
-                    <div class="team-member-content">
-                        <h1>Lucy Green</h1>
-                        <p>Audio Production Manager</p>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <figure>
-                        <img src="../assets/default-icon.jpg" alt="">
-                    </figure> 
-                    <div class="team-member-content">
-                        <h1>Kevin Black</h1>
-                        <p>Marketing and Promotions</p>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <figure>
-                        <img src="../assets/default-icon.jpg" alt="">
-                    </figure> 
-                    <div class="team-member-content">
-                        <h1>Sophie Lee</h1>
-                        <p>Website Developer</p>
-                        <p></p>
-                    </div>
-                </div>
-            </article>
+              </form>
         </section>
     </main>
 

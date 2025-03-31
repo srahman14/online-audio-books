@@ -27,17 +27,24 @@
                 </a>
             </div>
             <!--Right side with navigation buttons -->
-            <div class="middle-side">
+            <div class="middle-side" id="nav-menu">
                 <ul>
-                    <li><a href="../index.html" rel="noopener noreferrer" class="nav-button">Home</a></li>
-                    <li><a href="catalouge.html" rel="noopener noreferrer" class="nav-button">Catalogue</a></li>
-                    <li><a href="news.html" rel="noopener noreferrer" class="nav-button">News</a></li>
-                    <li><a href="#" rel="noopener noreferrer" class="nav-button">Page</a></li>
+                    <li><a href="index.html" rel="noopener noreferrer" class="nav-button">Home</a></li>
+                    <li><a href="pages/catalouge.html" rel="noopener noreferrer" class="nav-button">Catalogue</a></li>
+                    <li><a href="pages/news.html" rel="noopener noreferrer" class="nav-button">News</a></li>
+                    <li>
+                        <a href="#" rel="noopener noreferrer" class="nav-button">Pages ↓</a>   
+                        <ul>
+                            <li><a href="sign_in.html" rel="noopener noreferrer" class="nav-button">→	Sign In</a></li>
+                            <li><a href="our_team.html" rel="noopener noreferrer" class="nav-button">→	Our Team</a></li>
+                            <li><a href="contact_us.html" rel="noopener noreferrer" class="nav-button">→	Contact Us</a></li>
+                        </ul>
+                    </li>                
                 </ul>
             </div>
 
             <div class="right-side">
-                <a href="pages/register.html" rel="noopener noreferrer" class="nav-button">Register</a>
+                <a href="sign_in.html" rel="noopener noreferrer" class="nav-button" id="current">Sign In</a>
             </div>
         </nav>
     </header>
@@ -64,7 +71,7 @@
                   <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
                   <hr>
                   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                  <p class="signin">Already have an account? <a href="#">Sign in</a>.</p>
+                  <p class="signin">Already have an account? <a href="sign_in.html">Sign in</a>.</p>
                   
                   <button type="submit" class="registerbtn">Register</button>
                 </div>

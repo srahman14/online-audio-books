@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Audio Books - Catalouges</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../css/contact_us.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--Left side, with logo and name of company-->
+        <div class="left-side">
+          <a href="../index.html" rel="noopener noreferrer">
+            <!-- <img src="assets/logo.png" alt="image logo"> -->
+            <span>
+              <i class="fa-solid fa-book"></i>
+              <h1>Voxbooks</h1>
+            </span>
+          </a>
+        </div>
+        <!--Right side with navigation buttons -->
+        <div class="middle-side" id="nav-menu">
+          <ul>
+            <li>
+              <a href="index.html" rel="noopener noreferrer" class="nav-button"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/catalouge.html"
+                rel="noopener noreferrer"
+                class="nav-button"
+                >Catalogue</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/news.html"
+                rel="noopener noreferrer"
+                class="nav-button"
+                >News</a
+              >
+            </li>
+            <li>
+              <a href="#" rel="noopener noreferrer" class="nav-button"
+                >Pages ↓</a
+              >
+              <ul>
+                <li>
+                  <a
+                    href="sign_in.html"
+                    rel="noopener noreferrer"
+                    class="nav-button"
+                    >→ Sign In</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="our_team.html"
+                    rel="noopener noreferrer"
+                    class="nav-button"
+                    >→ Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact_us.html"
+                    rel="noopener noreferrer"
+                    class="nav-button"
+                    >→ Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-side">
+          <a
+            href="sign_in.html"
+            rel="noopener noreferrer"
+            class="nav-button"
+            id="current"
+            >Sign In</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Contact Form-->
+      <section>
+        <h1>Contact Us</h1> 
+        <div class="contact-container">
+          <form action="/action_page.php">
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;2025 VoxBooks</p>
+
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Catalouge</a>
+        <a href="#">About Us</a>
+        <a href="#">News</a>
+        <a href="#">Register</a>
+        <a href="#">Contact Us</a>
+      </aside>
+    </footer>
+  </body>
+</html>
