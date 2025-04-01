@@ -1,3 +1,52 @@
-.featured-container-promotions .item .right-text#seasonal-dates {
-    background: #000;
+#list-design {
+    list-style-type: none;
+    padding: 2em;
+    background: #e3e3e275;
+    border-radius: 8px;
+    margin: 1em;
+    font-weight: 600;
+}
+
+.item a {
+    margin-top: 20px;
+}
+
+#spotify-button {
+    margin-top: 0;
+    background: #1ed760;
+    transition: 0.3s ease-in-out;
+
+}
+
+#spotify-button:hover {
+    background: #29ad4c;
+    transition: 0.3s ease-out;
+}
+
+
+#soundcloud-button {
+    background: #ff7700;
+}
+
+#soundcloud-button:hover {
+    background: #dc6a07;
+    transition: 0.3s ease-out;
+}
+
+#podcast-button {
+    background: #d56dfb;
+}
+
+#podcast-button:hover {
+    background: #872EC4;
+    transition: 0.3s ease-out;
+}
+
+#youtube-button {
+    background: #c4302b;
+}
+
+#youtube-button:hover {
+    background: #811321;
+    transition: 0.3s ease-out;
 }
