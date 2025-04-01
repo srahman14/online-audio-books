@@ -15,13 +15,6 @@
   letter-spacing: -0.06ch;
 }
 
-/* .left-hero .audiobooks {
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--hover-color);
-    text-decoration-thickness: 4px;
-} */
-
 .left-hero .gradient-span {
   background: #121fcf;
   background: linear-gradient(to right, #b8dcf9 0%, #949bf8 100%);
@@ -85,7 +78,6 @@
   text-decoration-line: underline;
   margin-bottom: 10px;
   text-decoration-thickness: 3px;
-  text-underline-offset: -0.1px;
   text-decoration-color: var(--hover-color);
   letter-spacing: -0.1ch;
 }
@@ -436,6 +428,85 @@
     background-color: #0056b3;
   }
 
+#discount-code {
+  color: #fff;
+  font-style: italic;
+}
+
+
+
+@media (max-width: 900px) {
+  body {
+      font-size: 90%;
+  }
+
+  .left-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .left-hero .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .cta-buttons a {
+    background-color: var(--hover-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--text-color);
+    transition: 0.6s;
+  }
+  
+  .hero-section .right-hero img {
+    width: 20rem;
+  }
+
+    
+  .featured-audiobooks {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+
+  .featured-audiobooks-container {
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .featured-audiobooks .featured-audiobooks-container .left-title p {
+    width: 45ch;
+  }
+
+  .featured-container-testimonals .right-testimonal p {
+    font-size: 1.4rem;
+    margin: 0.7rem;
+  }
+
+
+  .featured-container-testimonals .left-testimonal p {
+    width: 25ch;
+  }
+
+  
+  .featured-container-promotions .item:last-child {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-container-promotions .item:last-child .main-text h1 {
+      width: 14ch;
+  }
+
+  .featured-container-promotions .item:last-child .main-text a {
+      font-size: 1.6rem;
+  }
+}
 
 @media (max-width: 768px) {
   .featured-container-promotions {

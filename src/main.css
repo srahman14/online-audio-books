@@ -32,10 +32,10 @@ body {
 }
 
 main {
-    flex: 1;
     width: 95%;
     max-width: 1024px;
     margin-inline: auto;
+    flex: 1;
 }
 
 header {
@@ -183,6 +183,187 @@ nav {
 }
 
 
+footer {
+    background: var(--background-color-2);
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    border-top: 10px solid var(--hover-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; /* Aligns text consistently */
+    padding: 2em 5%;
+    gap: 2em;
+    text-align: left;
+}
+
+footer h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.left-footer h1 {
+    margin-bottom: 1em;
+}
+
+.left-footer, .middle-footer, .right-footer {
+    max-width: 32%;
+    padding: 0 1rem;
+    align-items: flex-start;
+
+}
+
+.left-footer p {
+    max-width: 40ch;
+}
+
+.left-footer p#copyright {
+    color: var(--hover-color);
+    font-size: 1.3rem;
+}
+
+.middle-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.middle-footer ul li {
+    margin-bottom: 8px;
+}
+
+.middle-footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.middle-footer ul li img {
+    width: 20px;
+}
+
+.right-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-footer ul li {
+    margin-bottom: 5px;
+}
+
+.right-footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-footer ul li a:hover {
+    color: var(--hover-color);
+}
+
+.middle-footer ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Make footer responsive */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-footer, .middle-footer, .right-footer {
+        max-width: 100%;
+        flex: none;
+        margin-bottom: 1.5em;
+    }
+
+    footer h1 {
+        text-align: center;
+    }
+}
+
+#spotify-button, #soundcloud-button, #podcast-button, #youtube-button {
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+#spotify-button {
+    margin-top: 0;
+    background: #1ed760;
+    transition: 0.3s ease-in-out;
+}
+
+.middle-footer ul li i {
+    margin-right: 2rem;
+}
+
+#spotify-button:hover {
+    background: #29ad4c;
+    transition: 0.3s ease-out;
+
+}
+
+
+#soundcloud-button {
+    background: #ff7700;
+}
+
+#soundcloud-button:hover {
+    background: #dc6a07;
+    transition: 0.3s ease-out;
+}
+
+#podcast-button {
+    background: #d56dfb;
+}
+
+#podcast-button:hover {
+    background: #872EC4;
+    transition: 0.3s ease-out;
+}
+
+#youtube-button {
+    background: #c4302b;
+}
+
+#youtube-button:hover {
+    background: #811321;
+    transition: 0.3s ease-out;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        font-size: 90%;
+    }
+    
+    nav {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-button {
+        font-size: 1.2rem;
+    }
+
+    .middle-side {
+        margin: 1rem;
+    }
+
+    .middle-side ul {
+        gap: 1.4rem;
+    }
+
+    #nav-menu ul ul {
+        top: 180%;
+    }
+
+
 
 footer {
     border-top: 10px solid var(--hover-color);
@@ -190,7 +371,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     background: var(--background-color-2);
-    height: 10vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -207,7 +388,7 @@ footer aside {
     font-size: 1.4rem;
 }
 
-footer aside a {
+footer aside ul li a {
     text-decoration: none;
     margin-right: 20px;
     color: var(--text-color);
@@ -218,9 +399,18 @@ footer aside a:hover {
     color: var(--hover-color);
     transition: 0.6s;
 }
+}
 
-@media (max-width: 900) {
+@media (max-width: 767px) {
     body {
-        font-size: 90%;
+        /* SlickNav */
     }
-  }
+}
+
+@media (max-width: 479px) {
+    body {
+        /* SlickNav */
+    }
+}
+
+
