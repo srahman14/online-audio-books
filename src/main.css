@@ -363,42 +363,42 @@ footer h1 {
         top: 180%;
     }
 
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2em 5%;
+        gap: 2em;
+        text-align: left;
+    }
 
+    footer h1 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        text-align: left;
+    }
 
-footer {
-    border-top: 10px solid var(--hover-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: var(--background-color-2);
-    height: 40vh;
-    width: 100%;
-}
+    .left-footer p#copyright {
+        color: var(--text-color);
+    }
 
-footer p {
-    padding: 2rem;
-    margin: 2rem;
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
+    .middle-footer ul {
+        padding: 1em;
+    }
 
-footer aside {
-    padding: 2rem;
-    margin: 2rem;
-    font-size: 1.4rem;
-}
+    .middle-footer ul li a {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
 
-footer aside ul li a {
-    text-decoration: none;
-    margin-right: 20px;
-    color: var(--text-color);
-    transition: 0.4s;
-}
+    .right-footer h1 {
+        margin-bottom: 26px;
+    }
 
-footer aside a:hover {
-    color: var(--hover-color);
-    transition: 0.6s;
-}
+    .right-footer ul li {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 767px) {
