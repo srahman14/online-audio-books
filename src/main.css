@@ -166,6 +166,10 @@ nav {
     clear: both;
 }
 
+#mobilemenu {
+    display: none;
+}
+
 .right-side a {
     background-color: var(--text-color);
     margin: 2rem;
@@ -334,6 +338,27 @@ footer h1 {
 #youtube-button:hover {
     background: #811321;
     transition: 0.3s ease-out;
+}
+
+@media only screen and (max-width: 767px) {
+    #nav-menu {
+        display: none;
+    }
+
+    .right-side a#register-button {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+}
+
+/* Adjust font size for smaller screens */
+@media only screen and (max-width: 959px) {
+    #nav-menu ul li a {
+        font-size: 0.875em;
+    }
 }
 
 
