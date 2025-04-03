@@ -9,6 +9,13 @@
   padding: 1rem;
 }
 
+.catalouge-container #catalouge-title h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--nav-color);
+  margin-bottom: 20px;
+}
+
 .catalouge-container .filters {
   margin: 2rem;
   padding: 2rem;
@@ -120,6 +127,11 @@
     margin: 1rem;
   }
 
+  .catalouge-container .book-container {
+    padding: 1em;
+    margin: 1em auto;
+  }
+
   .catalog-table th,
   .catalog-table td {
     font-size: 1rem;
@@ -137,15 +149,17 @@
 @media screen and (max-width: 479px) {
   .catalouge-container {
     background-color: #fff;
-    margin: 2rem;
+    margin: 2rem auto;
     padding: 2rem;
+    max-width: 95%;
   }
   
   .catalouge-container #catalouge-title {
     margin: 2rem;
     padding: 1rem;
+    text-align: center; 
   }
-  
+
   .catalouge-container .filters {
     margin: 1em;
     padding: 3em;
@@ -154,10 +168,7 @@
     justify-content: center;
   }
   
-  .catalouge-container .book-container {
-    padding: 1em;
-    margin: 1em;
-  }
+
   
   .catalog-table {
     width: 100%;

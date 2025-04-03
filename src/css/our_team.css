@@ -65,15 +65,10 @@
     }
 }
 
-@media (min-width: 1024px) {
+/* 3 items per row on larger screens */
+@media screen and (min-width: 1024px) {
     .our-team-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
-    }
-}
-
-@media (width: 1024px) {
-    .our-team-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
@@ -83,10 +78,20 @@
         text-align: center;
         margin-top: 2em;   
     }
+
+    .our-team-section p {
+        text-align: center;
+        margin: 2em;        
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    
     
     .team-member:last-child {
         margin-bottom: 10em;
     }
+
 
 }
 
