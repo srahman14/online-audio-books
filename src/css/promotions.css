@@ -50,3 +50,31 @@
     background: #811321;
     transition: 0.3s ease-out;
 }
+
+@media (min-width: 767px) {
+    #list-design a {
+        font-size: 1.2rem;
+    }
+    
+  .featured-container-promotions .item .right-text #exercpt {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item .right-text a {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item:last-child .main-text h1 {
+      font-size: 2rem;
+  }
+
+  .featured-container-promotions .item:last-child .main-text a {
+      font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+    #list-design a {
+        font-size: 1rem;
+    }
+}

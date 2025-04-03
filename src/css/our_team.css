@@ -45,9 +45,23 @@
 }
 
 /* Adjust grid for different screen sizes */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .our-team-container {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+    }
+
+    .our-team-section h1 {
+        font-size: 2rem;
+    }
+
+    .team-member-content h1 {
+        font-size: 1.4rem;
+
+    }
+
+    .team-member-content p {
+        font-size: 1.2rem;
+
     }
 }
 
@@ -56,3 +70,23 @@
         grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
     }
 }
+
+@media (width: 1024px) {
+    .our-team-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .our-team-section h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2em;   
+    }
+    
+    .team-member:last-child {
+        margin-bottom: 10em;
+    }
+
+}
+

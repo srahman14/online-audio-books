@@ -434,7 +434,6 @@
 }
 
 
-
 @media (max-width: 900px) {
   body {
       font-size: 90%;
@@ -508,7 +507,25 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .hero-section {
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 6em;
+    align-items: center;
+  }
+
+  .left-hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    width: 20ch;
+  }
+
+  .hero-section .right-hero img {
+    width: 18rem;
+  }
+
   .featured-container-promotions {
     flex-direction: column;
     align-items: center;
@@ -517,29 +534,129 @@
   .featured-container-promotions .item {
     width: 100%;
   }
-}
-/* Responsive Layout */
-@media (max-width: 768px) {
+
   .news-items {
     grid-template-columns: 1fr; /* Stack items on smaller screens */
   }
+
+  .featured-audiobooks .featured-audiobooks-container .left-title p {
+    width: 35ch;
+  }
+  
+  .featured-container-promotions .item .right-text #exercpt {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item .right-text a {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item:last-child .main-text h1 {
+      font-size: 2rem;
+  }
+
+  .featured-container-promotions .item:last-child .main-text a {
+      font-size: 1.2rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero-section {
-    gap: 1rem;
-    padding: 2rem;
-    align-items: center;
+    padding: 2em;
+    margin-top: 6em;
   }
 
   .left-hero h1 {
-    font-size: 1.4rem;
-    margin-bottom: 3rem;
-    text-align: left;
-    width: 20ch;
+    font-size: 2rem;
+    width: 10ch;
   }
 
   .hero-section .right-hero img {
-    width: 10rem;
+    width: 15em;
+  }
+
+  .featured-audiobooks-container header a {
+    display: none;
+  }
+
+  .featured-audiobooks-container {
+    align-items: center;
+  }
+  
+  .featured-audiobooks .featured-audiobooks-container .audiobooks-items {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .featured-container-promotions {
+    width: 70%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .featured-container-promotions .item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .featured-testimonals {
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
+  .featured-testimonals .featured-container-testimonals {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .news-items {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-audiobooks .featured-audiobooks-container .left-title p {
+    width: 35ch;
+  }
+  
+  .featured-container-promotions .item .right-text #exercpt {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item .right-text a {
+    font-size: 1rem;
+  }
+
+  .featured-container-promotions .item:last-child .main-text h1 {
+      font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero-section {
+    padding: 1em;
+    margin-top: 6em;
+  }
+
+  .left-hero h1 {
+    font-size: 1.7rem;
+    width: 10ch;
+  }
+
+  .hero-section .right-hero img {
+    width: 12em;
+  }
+  
+  .featured-audiobooks-container header .left-title  {
+    width: max-content;
+    margin-inline: auto;
   }
 }

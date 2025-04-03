@@ -61,3 +61,17 @@ a {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+@media (min-width: 767px) {
+  .register-container {
+    width: 90%;
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .register-container {
+    width: 80%;
+    margin-bottom: 10em;
+  }
+}

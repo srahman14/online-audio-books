@@ -228,6 +228,10 @@ footer h1 {
     font-size: 1.3rem;
 }
 
+.middle-footer h1 {
+    margin-bottom: 20px;
+}
+
 .middle-footer ul {
     list-style: none;
     padding: 0;
@@ -273,7 +277,7 @@ footer h1 {
 }
 
 /* Make footer responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     footer {
         flex-direction: column;
         align-items: center;
@@ -341,18 +345,29 @@ footer h1 {
 }
 
 @media only screen and (max-width: 767px) {
+    /* Hide the regular nav menu */
     #nav-menu {
         display: none;
     }
 
+    /* Hide the register button */
     .right-side a#register-button {
+        display: none; /* Hides the Register button */
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /* Hide the regular nav menu */
+    #nav-menu {
         display: none;
     }
 
-    #mobilemenu {
-        display: block;
+    /* Hide the register button */
+    .right-side a#register-button {
+        display: none; /* Hides the Register button */
     }
 }
+
 
 /* Adjust font size for smaller screens */
 @media only screen and (max-width: 959px) {
@@ -360,7 +375,6 @@ footer h1 {
         font-size: 0.875em;
     }
 }
-
 
 @media (max-width: 900px) {
     body {
@@ -425,17 +439,4 @@ footer h1 {
         margin-bottom: 5px;
     }
 }
-
-@media (max-width: 767px) {
-    body {
-        /* SlickNav */
-    }
-}
-
-@media (max-width: 479px) {
-    body {
-        /* SlickNav */
-    }
-}
-
 
