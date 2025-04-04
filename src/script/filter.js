@@ -1,18 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     const filterButtons = document.querySelectorAll(".filter-option");
-    const books = document.querySelectorAll(".catalog-table tbody tr"); // Select all book rows
+    // Select all book rows from table entries (tr)
+    const books = document.querySelectorAll(".catalog-table tbody tr"); 
 
     filterButtons.forEach((button) => {
         button.addEventListener("click", function () {
-            const selectedCategory = this.getAttribute("data-filter"); // Get selected category
+            // Get selected category from the data filter
+            const selectedCategory = this.getAttribute("data-filter"); 
 
             books.forEach((book) => {
-                const bookCategories = book.getAttribute("data-category").split(" "); // Convert to array
+                // Add the book categories and convert into array
+                const bookCategories = book.getAttribute("data-category").split(" "); 
                 
                 if (selectedCategory === "all" || bookCategories.includes(selectedCategory)) {
-                    book.style.display = ""; // Show matching books
+                    // Show matching books
+                    book.style.display = ""; 
                 } else {
-                    book.style.display = "none"; // Hide non-matching books
+                    // Hide non-matching books
+                    book.style.display = "none"; 
                 }
             });
         });
