@@ -1,3 +1,4 @@
+/* Catalouge Container */
 .catalouge-container {
   background-color: #fff;
   margin: 2rem;
@@ -7,6 +8,10 @@
 .catalouge-container #catalouge-title {
   margin: 2rem;
   padding: 1rem;
+  /* Set the background and border as none as it inherits
+     styling from header from main.css */
+  background: none;
+  border: none;
 }
 
 .catalouge-container #catalouge-title h1 {
@@ -17,14 +22,19 @@
 }
 
 .catalouge-container .filters {
+/* Center all the filters */
+  justify-content: center;
   margin: 2rem;
   padding: 2rem;
   display: flex;
   flex-direction: row;
+  /* Wrap the filters, such that if there is 
+  not enough space a filter will just go to the
+  next line */
   flex-wrap: wrap;
   gap: 1rem;
 }
-
+/* Design for the filter button */
 .catalouge-container .filters .filter-option {
   background: var(--background-color-2);
   padding: 0.6rem 1.2rem;
@@ -42,6 +52,7 @@
   color: #fff;
 }
 
+/* Book Container */
 .catalouge-container .book-container {
   padding: 2rem;
   margin: 2rem;
@@ -50,6 +61,7 @@
   overflow-x: auto;
 }
 
+/* Table holding all the books */
 .catalog-table {
   width: 100%;
   border-collapse: collapse;
@@ -59,16 +71,20 @@
   overflow: hidden;
 }
 
+/* styling for the table */
 .catalog-table th,
 .catalog-table td {
+  /* Styling for border of table */
   border: 1px solid #ddd;
   padding: 1rem;
   text-align: left;
+  /* Styling for entries of table */
   color: #000;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
+/* Desigining the headers for the table */
 .catalog-table th {
   background-color: var(--nav-color);
   color: var(--text-color);
@@ -76,6 +92,7 @@
   text-align: center;
 }
 
+/* Styling for the image in the table */
 .catalog-table td img {
   width: 100px;
   height: auto;
@@ -84,97 +101,61 @@
   margin: 0 auto;
 }
 
-.book-container .item-book {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.book-container .item-book img {
-  width: 18rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.book-container .item-book p {
-  margin-inline: auto;
-  color: var(--text-color);
-  letter-spacing: -0.09ch;
-  font-size: 1.2rem;
-}
-
-/* Responsive Design */
+/* Responsive Design for 767px */
 @media (max-width: 767px) {
+  /* Reduce font-size of table contents */
   .catalog-table {
     font-size: 1rem;
   }
-
+  /* Reduce padding for table headings and entries */
   .catalog-table th,
   .catalog-table td {
     padding: 0.8rem;
   }
-
-  .catalog-table td img {
-    width: 80px;
-  }
-
-  .buy-button {
-    font-size: 1rem;
-    padding: 0.4rem 0.8rem;
-  }
-
+  /* Reduce margin for filter buttons */
   .catalouge-container .filters {
     margin: 1rem;
   }
-
+  /* Reduce margin for book container */
   .catalouge-container .book-container {
     padding: 1em;
     margin: 1em auto;
   }
-
-  .catalog-table th,
-  .catalog-table td {
-    font-size: 1rem;
-  }
-
-  .catalog-table th {
-    font-size: 1.2rem;
-  }
-
+  /* Reduce image size for table entries */
   .catalog-table td img {
     width: 8em;
   }
 }
 
+/* Responsive Design for 479px */
 @media screen and (max-width: 479px) {
   .catalouge-container {
-    background-color: #fff;
+    /* use of auto to centre container */
     margin: 2rem auto;
     padding: 2rem;
+    /* reduce max-width to 95% */
     max-width: 95%;
   }
   
   .catalouge-container #catalouge-title {
-    margin: 2rem;
-    padding: 1rem;
+    /* center title */
     text-align: center; 
   }
 
   .catalouge-container .filters {
+    /* reduce margin and increase padding */
     margin: 1em;
     padding: 3em;
     flex-direction: row;
+    /* reduce gap */
     gap: 0.6em;
     justify-content: center;
   }
-  
-
-  
+  /* reduce font size for catalog table */
   .catalog-table {
-    width: 100%;
     font-size: 0.9rem;
   }
-  
+  /* reduce padding for table headings and entry and font size */
   .catalog-table th,
   .catalog-table td {
     border: 1px solid #ddd;
@@ -184,42 +165,21 @@
     font-weight: bold;
     font-size: 0.83rem;
   }
-  
   .catalog-table th {
     background-color: var(--nav-color);
     color: var(--text-color);
-    font-size: 0.83rem;
     text-align: center;
   }
-  
+  /* reduce image size of table entries */
   .catalog-table td img {
     width: 60px;
     height: auto;
   }
-  
-  .book-container .item-book {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .book-container .item-book img {
-    width: 18rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
-  .book-container .item-book p {
-    margin-inline: auto;
-    color: var(--text-color);
-    letter-spacing: -0.09ch;
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 430px) {
+  /* reduce margin and padding of container */
   .catalouge-container {
-    background-color: #fff;
     margin: 1rem;
     padding: 1rem;
   }

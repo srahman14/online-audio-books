@@ -12,7 +12,8 @@
 
 /* Full-width input fields */
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -22,7 +23,7 @@ input[type="password"] {
   background: #f1f1f1;
 }
 
-input[type="text"]:focus,
+input[type="email"]:focus, input[type="text"]:focus,
 input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
@@ -63,6 +64,7 @@ a {
 }
 
 @media (min-width: 767px) {
+  /* Reduce the width of container */
   .register-container {
     width: 90%;
     margin-bottom: 10em;
@@ -70,6 +72,7 @@ a {
 }
 
 @media screen and (max-width: 479px) {
+  /* Reduce the width of container */
   .register-container {
     width: 80%;
     margin-bottom: 10em;

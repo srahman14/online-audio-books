@@ -151,15 +151,16 @@
   height: 44px; }
 
 
+  /* Styling for slicknav for 767px */
   @media only screen and (max-width: 767px) {
     /* Show the mobile menu (SlickNav) */
     .slicknav_menu {
-        display: block; /* Makes the mobile menu visible */
+       /* Makes the mobile menu visible */
+        display: block;
         max-width: 100%;
         margin: 0 auto;
-        /* margin-right: 1em; */
     }
-
+    
     .slicknav_nav {
       width: 100%;
       max-width: 95%;
@@ -176,6 +177,7 @@
   
 }
 
+  /* Styling for slicknav for => 768px */
   @media only screen and (min-width: 768px) {
     .slicknav_menu {
       display: none; 

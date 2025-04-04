@@ -1,3 +1,4 @@
+/* Hero Section CSS - landing section */
 .hero-section {
   display: flex;
   flex-direction: row;
@@ -7,6 +8,7 @@
   justify-content: center;
 }
 
+/* Left side of Hero Section */
 .left-hero h1 {
   font-size: 3.9rem;
   margin-bottom: 3rem;
@@ -22,6 +24,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Left side buttons - CTA stands for call to action buttons */
 .left-hero .cta-buttons {
   display: flex;
   flex-direction: row;
@@ -46,10 +49,12 @@
   transition: 1s;
 }
 
+/* Right side - image */
 .hero-section .right-hero img {
   width: 30rem;
 }
 
+/* Featured genres of different books */
 .featured-audiobooks {
   margin-top: 18rem;
   margin-bottom: 8rem;
@@ -73,40 +78,44 @@
   border: none;
 }
 
-.featured-audiobooks .featured-audiobooks-container .left-title h1 {
-  font-size: 2rem;
+.featured-audiobooks .featured-audiobooks-container .left-title h2 {
+  font-size: 1.6rem;
   text-decoration-line: underline;
   margin-bottom: 10px;
   text-decoration-thickness: 3px;
-  text-decoration-color: var(--hover-color);
+  text-decoration-color: var(--nav-color);
   letter-spacing: -0.1ch;
 }
 
 .featured-audiobooks .featured-audiobooks-container .left-title p {
-  width: 65ch;
+  width: 55ch;
   color: #aaa8a8;
   letter-spacing: -0.1ch;
 }
 
+/* Styling for audiobook items - i.e. different genres */
 .featured-audiobooks .featured-audiobooks-container .audiobooks-items {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Use of flex-wrap allows items to automatically respond to size of page */
   align-items: center;
   gap: 2rem;
   padding: 2rem;
 }
 
+/* Styling for each item - i.e. each audiobook genre */
 .audiobooks-items .item {
   background-color: #f1f1f1;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  width: 16rem;
+  /* Use of fixed height and width for consistent design */
+  width: 16rem; 
   height: 26rem;
 }
 
 .audiobooks-items .item img {
+  /* Use of fixed width for image for consistent design */
   width: 14rem;
   border-radius: 5px;
   margin-bottom: 0.6rem;
@@ -119,6 +128,7 @@
   font-size: 1.3rem;
 }
 
+/* Applying bg-color for each of the audiobook items */
 .audiobooks-items .item:nth-child(1) {
   background-color: #576eec;
 }
@@ -155,10 +165,11 @@
   transition: 0.5s ease-out;
 }
 
+/* Featured Testimonials Section */
 .featured-testimonals {
   background: var(--background-color-3);
   padding: 2rem;
-  display: flex;
+  display: flex; 
   justify-content: center;
   margin-bottom: 8rem;
   width: 100%;
@@ -192,7 +203,6 @@
   margin: 0.6rem;
 }
 
-
 .featured-container-testimonals .left-testimonal p {
   width: 45ch;
   font-size: 1.2rem;
@@ -201,18 +211,39 @@
   margin-top: 1.4rem;
 }
 
-.featured-container-testimonals .left-testimonal h1 {
+.featured-container-testimonals .left-testimonal h2 {
   letter-spacing: -0.1ch;
   font-size: 2rem;
   text-decoration: underline;
   text-decoration-color: var(--background-color-2);
 }
 
+/* Design for the footer of the customer testimonial */
+#footer-testimonal {
+  border-top: 8px solid var(--hover-color);
+  background: none;
+  color: #000;
+  flex-direction: row;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  background: #e7e6e6ce;
+  border-radius: 8px;
+}
+
+#footer-testimonal h3 {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Featured News Section */
 .featured-news {
   padding: 2rem;
   display: flex;
   justify-content: center;
   margin-bottom: 8rem;
+  margin: 4rem auto;
+  max-width: 1024px;
 }
 
 .feautred-news .featured-news-container {
@@ -221,13 +252,7 @@
   padding: 2rem;
 }
 
-.featured-news {
-  margin: 4rem auto;
-  padding: 2rem;
-  max-width: 1024px;
-}
-
-.featured-container-news h1 {
+.featured-container-news h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -235,14 +260,19 @@
   text-decoration-color: var(--background-color-2);
 }
 
-.featured-container-news h2 {
+.featured-container-news h3 {
   font-size: 1.2rem;
   margin: 10px 0 0;
 }
 
+/* Use of grid layout for different news canvases */
 .news-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /*
+   repeat 2 times each column being 1fractional unit wide 
+   thus max number of canvases in one row is 2
+  */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 1.5rem;
   justify-content: center;
 }
@@ -262,14 +292,14 @@
   border-radius: 8px;
 }
 
-.news-items .item caption {
+.news-items .item time {
   display: block;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1rem;
+  color: #000;
   margin: 0.5rem 0;
 }
 
-.news-items .item h1 {
+.news-items .item h3 {
   font-size: 1.3rem;
   margin: 0.5rem 0;
 }
@@ -289,25 +319,19 @@
   background-color: #0056b3;
 }
 
+/* Item moves up by 5px */
 .news-items .item:hover {
   transform: translateY(-5px);
 }
 
+/* Featured Promotions Section */
 .featured-promotions {
-  margin-top: 22rem;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 8rem;
-}
-
-.featured-promotions {
-  margin-top: 5rem;
-  padding: 2rem;
+  margin-top: 5em;
+  padding: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 8em;
 }
 
 .featured-container-promotions {
@@ -322,6 +346,7 @@
   flex-wrap: wrap;
 }
 
+/* 'Top Sales this Week' */
 .featured-container-promotions #title {
   text-align: center;
   font-size: 2rem;
@@ -330,6 +355,10 @@
   width: 100%;
 }
 
+/* 
+  Item is split into left and right, left being
+  the image and right being the text and button 
+ */
 .featured-container-promotions .item {
   display: flex;
   flex-direction: row;
@@ -362,22 +391,23 @@
   margin-bottom: 10px;
 }
 
+/* Styling for old price */
 .right-text .price#old-price {
   text-decoration: line-through;
 }
-
+/* Styling for new price */
 .right-text .price#new-price {
   color: #e64141eb;
   margin-left: 10px;
 }
-
+/* Styling for exercpt of book */
 .featured-container-promotions .item .right-text #exercpt {
   margin-top: 10px;
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 1.5rem;
 }
-
+/* Same styling use for button as news items */
 .featured-container-promotions .item .right-text a {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -393,6 +423,10 @@
   background-color: #0056b3;
 }
 
+/* 
+  Accessing last child to have 100% of width instead of being only half
+  the width like the first two items, as they are split into left and right 
+*/
 .featured-container-promotions .item:last-child {
   width: 100%;
   margin-top: 2rem;
@@ -406,7 +440,7 @@
     padding: 3rem;
 }
 
-.featured-container-promotions .item:last-child .main-text h1 {
+.featured-container-promotions .item:last-child .main-text h3 {
     width: 16ch;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -433,12 +467,13 @@
   font-style: italic;
 }
 
-
-@media (max-width: 900px) {
+/* Responsiveness for 900px screens */
+@media screen and (max-width: 900px) {
+  /* Reduce all font sizes by 90% */
   body {
       font-size: 90%;
   }
-
+  /* Reduce size of h1 tag in hero section */
   .left-hero h1 {
     font-size: 2rem;
   }
@@ -460,116 +495,115 @@
     color: var(--text-color);
     transition: 0.6s;
   }
-  
+  /* Reduce size of image to fit into screen */
   .hero-section .right-hero img {
     width: 20rem;
   }
-
+  /* Increase margin top and bottom for featured audiobooks section */
   .featured-audiobooks {
     margin-top: 12rem;
     margin-bottom: 8rem;
     width: 100%;
   }
-
+  /* Reduce width of the container to 90% */
   .featured-audiobooks-container {
     width: 90%;
     margin: 1rem;
     padding: 1rem;
   }
-
+  /* Reduce width of the <p> tag to fit nicely*/
   .featured-audiobooks .featured-audiobooks-container .left-title p {
     width: 45ch;
   }
-
+  /* Increase font size of the customer testimonials and reduce margin */
   .featured-container-testimonals .right-testimonal p {
     font-size: 1.4rem;
     margin: 0.7rem;
   }
-
-
+  /* Reduce width of the <p> tag to fit better and give more priority to customer testimonial*/
   .featured-container-testimonals .left-testimonal p {
     width: 25ch;
   }
-
-  
+  /* Center last child content */
   .featured-container-promotions .item:last-child {
     justify-content: center;
     align-items: center;
   }
-
-  .featured-container-promotions .item:last-child .main-text h1 {
+  /* Reduce width of last child content for promotions section */
+  .featured-container-promotions .item:last-child .main-text h3 {
       width: 14ch;
+      font-size: 2rem;
   }
-
+  /* Increase font size of button */
   .featured-container-promotions .item:last-child .main-text a {
       font-size: 1.6rem;
   }
 }
 
+/* Responsiveness for 767px screens */
 @media screen and (max-width: 767px) {
   .hero-section {
+    /* Reduction of gap between image and text */
     gap: 1rem;
     padding: 2rem;
     margin-top: 6em;
     align-items: center;
   }
-
   .left-hero h1 {
+    /* Reduce font-size and reduce margin and width of text */
     font-size: 1.8rem;
     margin-bottom: 3rem;
     text-align: left;
     width: 20ch;
   }
-
+  /* Reduce image size in hero section */
   .hero-section .right-hero img {
-    width: 18rem;
+    width: 19rem;
   }
-
-  .featured-container-promotions {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  
   .featured-container-promotions .item {
     width: 100%;
   }
-
+  /* Switch the news items to only have item per fractional unit, i.e. only one item per row */
   .news-items {
     grid-template-columns: 1fr; /* Stack items on smaller screens */
   }
-
+  /* Reduce width of <p> tag under featured audiobooks title */
   .featured-audiobooks .featured-audiobooks-container .left-title p {
     width: 35ch;
   }
-  
+  /* Reduce font size of <p> tag for container promotions */
   .featured-container-promotions .item .right-text #exercpt {
     font-size: 1rem;
   }
-
+  /* Reduce font size of <a> tag for container promotions */
   .featured-container-promotions .item .right-text a {
     font-size: 1rem;
   }
-
-  .featured-container-promotions .item:last-child .main-text h1 {
+  /* Reduce font size of <h3> tag for last child of promotions */
+  .featured-container-promotions .item:last-child .main-text h3 {
       font-size: 2rem;
   }
-
+  /* Reduce font size of <a> tag for last child of promotions */
   .featured-container-promotions .item:last-child .main-text a {
       font-size: 1.2rem;
   }
 }
 
+/* Responsiveness for 479px screens */
 @media screen and (max-width: 479px) {
+  /* Disallow overflow-x for smaller */
   body {
     overflow-x: hidden;
   }
+  /* Reduce padding in hero section and increase margin */
   .hero-section {
     padding: 2em;
     margin-top: 6em;
     align-items: center;
     text-align: center;
   }
-
+  /* Reduce font-size of hero section h1 text and */
   .left-hero h1 {
     font-size: 2rem;
     width: 90%;
@@ -581,112 +615,115 @@
     justify-content: center;
   }
 
+  /* Reduce max-width of image to 90% for responsiveness */
   .hero-section .right-hero img {
     max-width: 90%;
     height: auto;
     display: block;
   }
-
+  /* Center featured-audiobooks title */
   .featured-audiobooks-container header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  /* Left title here is for the featured audiobooks <h2> and <p> tags */
+  /* Reduce the max-width to 90% for responsivness */
   .left-title {
     max-width: 90%; 
     margin: 0 auto; 
   }
-
+  /* Reduce the max-width to 80% and center text using margin and text-align */
   .left-title p {
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
-  }
-
+  } 
+  /* Remove the <a> tag for smaller screens */
   .featured-audiobooks-container header a {
     display: none;
   }
-
+  /* Center all the items, as there will only be one item per row */
   .featured-audiobooks-container {
     align-items: center;
     text-align: center;
   }
-
+  /* Center all the items, as there will only be one item per row */
   .featured-audiobooks .featured-audiobooks-container .audiobooks-items {
     justify-content: center;
     gap: 1rem;
   }
-
+  /* Reduce the max-width to 80% for responsivness for the promotions section*/
   .featured-container-promotions {
     width: 80%;
     flex-direction: row;
     justify-content: center;
   }
-
+  /* Switch the item layout for the promotions section to a column direction
+    for better UI and readability for user */
   .featured-container-promotions .item {
     flex-direction: column;
     align-items: center;
   }
   
+  /* Center the featured testimonals section */
   .featured-testimonals {
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
   }
-
-  .featured-testimonals h1 {
+  /* Center the featured testimonals title */
+  .featured-testimonals h2 {
     text-align: center;
   }
-
+  /* Switch the item layout for the testimonials section to a column direction
+  for better UI and readability for user */
   .featured-testimonals .featured-container-testimonals {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
   }
-
+  /* News items switched to 1 fractional unit, one news item per row */
   .news-items {
     grid-template-columns: 1fr;
   }
-  
+
+  /* Reduce font-size for exercpt for promotional section */
   .featured-container-promotions .item .right-text #exercpt {
     font-size: 1rem;
   }
-
+  /* Reduce font-size for <a> tag for promotional section */
   .featured-container-promotions .item .right-text a {
     font-size: 1rem;
   }
-
-  .featured-container-promotions .item:last-child .main-text h1 {
+  /* Reduce font-size for <h3> tag for promotional section */
+  .featured-container-promotions .item:last-child .main-text h3 {
       font-size: 1.9rem;
   }
 }
 
 @media screen and (max-width: 430px) {
+  /* Disallow overflow-x for smaller */
   body {
     overflow-x: hidden;
   }
+  /* Reduce padding for hero section  */
   .hero-section {
     padding: 1em;
     margin-top: 6em;
   }
-
+  /* Reduce <h1> tag in hero section */
   .left-hero h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     width: 90%;
     max-width: 280px;
   }
-
+  /* Reduce max-width for <img> tag in hero section for responsiveness */
   .hero-section .right-hero img {
     max-width: 75%;
     height: auto;
-  }
-  
-  .featured-audiobooks-container header .left-title  {
-    width: max-content;
-    margin-inline: auto;
   }
 }

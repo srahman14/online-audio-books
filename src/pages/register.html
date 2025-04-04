@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoxBooks | Register</title>
+    <!-- Website Icon -->
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <!--Meta Tags for SEO -->
     <meta name="description" content="Regsiter an account here at VoxBooks to be able to purchase and access many audiobooks">
     <meta name="keywords" content="audiobooks, books, online library, book streaming, book downloads, fiction, non-fiction, audiobooks platform">
     <meta name="author" content="Voxbooks">
     <!--CSS -->
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="../slicknav.css">
     <!--Google Fonts and Font Awesome -->
@@ -45,10 +46,11 @@
                         <a href="#" rel="noopener noreferrer" class="nav-button">Pages ↓</a>   
                         <ul>
                             <li><a href="sign_in.html" rel="noopener noreferrer" class="nav-button">→	Sign In</a></li>
-                            <li><a href="pages/register.html" rel="noopener noreferrer" class="nav-button">→	Register</a></li>
+                            <li><a href="register.html" rel="noopener noreferrer" class="nav-button">→	Register</a></li>
                             <li><a href="our_team.html" rel="noopener noreferrer" class="nav-button">→	Our Team</a></li>
-                            <li><a href="contact_us.html" rel="noopener noreferrer" class="nav-button">→	Contact Us</a></li>
-                            <li><a href="promotions.html" rel="noopener noreferrer" class="nav-button">→	Promotions</a></li>
+                            <li><a href="contact_us.html" rel="noopener noreferrer" class="nav-button">→ Contact Us</a></li>
+                            <li><a href="promotions.html" rel="noopener noreferrer" class="nav-button">→ Promotions</a></li>
+                            <li><a href="about_us.html" rel="noopener noreferrer" class="nav-button">→	About Us</a></li>
                         </ul>
                     </li>                
                 </ul>
@@ -62,28 +64,34 @@
     </header>
 
     <main>
-        <!--Register Form-->
+        <!--Register Section - To join the email list-->
         <section> 
             <form>
                 <div class="register-container">
                   <h1>Register</h1>
                   <p>Please fill in this form to join our email list to stay posted on any updates or events.</p>
                   <hr>
-              
+                    
+                  <!--Email Field - used in input validation -->
                   <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter email" name="email" id="email" required>
-                  
+                  <input type="email" placeholder="Enter email" name="email" id="email" required>
+                
+                  <!--Re-enter Email Field - used in input validation -->
                   <label for="email_2"><b>Re-enter email</b></label>
-                  <input type="text" placeholder="Re-enter email" name="email_2" id="email_2" required>
+                  <input type="email" placeholder="Re-enter email" name="email_2" id="email_2" required>
 
+                  <!--Firstname field -->
                   <label for="fname"><b>Firstname</b></label>
                   <input type="text" placeholder="Enter first name" name="fname" id="fname" required>
                     
+                  <!--Lastname field -->
                   <label for="lname"><b>Lastname</b></label>
                   <input type="text" placeholder="Enter last name" name="lname" id="lname" required>
                   <hr>
+                  <!-- TOS -->
                   <p>By joining our email list you agree to our <a href="#">Terms & Privacy</a>.</p>
-                
+                    
+                  <!-- Submit button for registeration -->
                   <button type="submit" class="registerbtn">Register</button>
                 </div>
 
@@ -92,26 +100,31 @@
     </main>
 
 
+    <!--Footer section, provides key information and links for more about VoxBooks -->
     <footer>
-        <div class="left-footer">
-            <h1>More about Online Audio Books</h1>
+        <!--Short snippet of About VoxBooks -->
+        <section class="left-footer">
+            <h2>More about VoxBooks</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla modi, quo voluptatum debitis corrupti dignissimos ducimus ipsum, voluptas doloremque hic, nihil porro magnam voluptatem!</p>
             <br>
+            <!--Use of copyright entity -->
             <p id="copyright">&copy; 2025 VoxBooks</p>  
-        </div>
+        </section>
         
-        <div class="middle-footer">
-            <h1>Keep Connected</h1>
+        <!--Social Media and Audio Platform Links -->
+        <section class="middle-footer" aria-labelledby="connect-heading">
+            <h2>Keep Connected</h2>
+            <!--Use of aria-labelledby associates section with heading -->
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Spotify">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="spt-img">
                             <p>Spotify (Online Audio Books)</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Soundcloud">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Antu_soundcloud.svg" alt="snd-cld-img">
                             <p>Soundcloud (Online Audio Books)</p>
                         </a>
@@ -119,25 +132,24 @@
 
 
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Podcast">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg" alt="pdc-img">
                             <p>Podcast (Online Audio Books)</p>
                         </a>
                     </li>
 
-
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on YouTube">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/123qwer.svg" alt="yt-img">
                             <p>YouTube (Online Audio Books)</p>
                         </a>
                     </li>   
                 </ul>
-        </div>
+        </section>
 
-        
-        <div class="right-footer">
-            <h1>Pages</h1>
+        <!--Sitemap / Navigation Links for All Pages -->
+        <section class="right-footer" aria-label="Footer Navigation">
+            <h2>Pages</h2>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="catalouge.html">Catalouge</a></li>
@@ -149,10 +161,11 @@
                 <li><a href="our_team.html">Our Team</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
-        </div>
-    </footer>   
+        </section>
+    </footer>  
+    <!-- JS Script for validating all inputs -->
     <script src="../script/validation.js"></script>
-
+    <!-- Script for SLICKNAV  -->
     <script>
         $(document).ready(function() {
             console.log("jQuery Loaded:", typeof $);

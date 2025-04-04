@@ -1,7 +1,9 @@
+/* Our team section */
 .our-team-section {
     width: 100%;
 }
 
+/* Styling the <h1> tag */
 .our-team-section h1 {
     font-size: 2.4rem;
     margin: 2rem;   
@@ -9,15 +11,21 @@
     text-decoration-color: var(--background-color-2);
 }
 
+/* Our team container, use of grid layout */
 .our-team-container {
     display: grid;
+    /* automatically fits as many columns in the available place
+    defines the minimum and maximum width of each column
+    i.e. a column will not be smaller than 280px and it can grow up to 
+    1fr to take up remaining space equally */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin: 2rem;
     padding: 2rem;
 }
-
+/* Canvases of all the members */
 .team-member {
+    /* content ordered using flexbox */
     padding: 2rem;
     background: var(--background-color-2);
     border-radius: 8px;
@@ -47,26 +55,27 @@
 /* Adjust grid for different screen sizes */
 @media (min-width: 767px) {
     .our-team-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+        /* 2 items per row  */
+        grid-template-columns: repeat(2, 1fr); 
     }
-
+    /* Reduce <h1> font-size */
     .our-team-section h1 {
         font-size: 2rem;
     }
-
+    /* Reduce <h1> font-size */
     .team-member-content h1 {
         font-size: 1.4rem;
 
     }
-
+    /* Reduce <p> font-size */
     .team-member-content p {
         font-size: 1.2rem;
 
     }
 }
 
-/* 3 items per row on larger screens */
 @media screen and (min-width: 1024px) {
+    /* 3 items per row on larger screens */
     .our-team-container {
         grid-template-columns: repeat(3, 1fr); 
     }
@@ -85,8 +94,6 @@
         font-size: 1rem;
         font-weight: 600;
     }
-
-    
     
     .team-member:last-child {
         margin-bottom: 10em;

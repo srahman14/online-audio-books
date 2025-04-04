@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoxBooks | Home</title>
+    <!--Website Icon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!--Meta Tags for SEO -->
     <meta name="description" content="Explore a wide selection of audiobooks from various genres. Stream or download audiobooks for an immersive experience on the go.">
     <meta name="keywords" content="audiobooks, books, online library, book streaming, book downloads, fiction, non-fiction, audiobooks platform">
     <meta name="author" content="Voxbooks">
@@ -74,9 +76,9 @@
         <section class="hero-section">
             <div class="left-hero">
                 <h1>Find your next Audiobook using <span class="gradient-span">VoxBooks</span></h1>
-                <div class="cta-buttons">
+                <nav class="cta-buttons">
                     <a href="pages/catalouge.html" rel="noopener noreferrer">Browse Audiobooks</a>
-                </div>
+                </nav>
             </div>
 
             <figure class="right-hero">
@@ -84,69 +86,72 @@
             </figure>
         </section>
 
-        <!--Featured Audiobooks Section -->
+        <!--Featured Audiobooks Section-->
+        <!--Grid Layout used for responsiveness-->
         <section class="featured-audiobooks">
             <div class="featured-audiobooks-container">
                 <header>
                     <div class="left-title">
-                        <h1>Featured Audiobooks</h1>
+                        <h2>Featured Audiobooks</h2>
                         <p>Embark on adventorous journeys. A story waiting for you, designed for your entertainment. Aliens, tech marvels, and cosmic wonders await in these mind-bending sagas.</p>
                     </div>
-
-                    <div class="cta-buttons">
+                    <nav class="cta-buttons">
                         <a href="pages/catalouge.html" rel="noopener noreferrer">Browse Audiobooks</a>
-                    </div>
+                    </nav>
                 </header>
-
-                <div class="audiobooks-items">
-                    <div class="item">
+                <!--Audiobooks Grid-->
+                <section class="audiobooks-items">
+                    <!--Using <article> to indicate individual audiobook items as standalone content-->
+                    <article class="item">
                         <img src="assets/to-kill-a-mocking-bird.jpg" alt="book-image">
                         <h1>Fiction</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/dune.jpg" alt="book-image">
                         <h1>Science Fiction & Fantasy</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/educated.jpg" alt="book-image">
                         <h1>Non-Fiction</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/atomic-habits.jpg" alt="book-image">
                         <h1>Self-Help & Personal Development</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/charlottes-web.jpg" alt="book-image">
                         <h1>Children's Books</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/book-image-3.png" alt="book-image">
                         <h1>Romance</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/harry-potter-and-the-philosophers-stone.jpg" alt="book-image">
                         <h1>Mystery & Thriller</h1>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="assets/sapiens-a-brief-history-of-humankind.jpg" alt="book-image">
                         <h1>History</h1>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </div>
         </section>
 
-        <!--Featured Audiobooks Section -->
+        <!--Featured Audiobooks Section-->
         <section class="featured-testimonals">
             <div class="featured-container-testimonals">
-                <div class="left-testimonal">
-                    <h1>Testimonals</h1>
+                <!--Testimonals divided into left and right for desktop and large screens
+                    for smaller screens the testimonals divided into a column direction-->
+                <section class="left-testimonal">
+                    <h2>Testimonals</h2>
                     <p>
                     Our Exceptional client experiences stem from our attentive team, efficient processes, and consistent success. Their words fuel our continuous improvement.
                     </p>
@@ -156,118 +161,134 @@
                         dedicated team, a diverse audiobook catalogue, and a focus on customer
                         satisfaction, we aim to be the preferred choice for audiobook enthusiasts. 
                     </p>
-                </div>
+                </section>
 
                 <!--Canvas for different testimonals -->
-                <div class="right-testimonal">
-                    <div class="canvas-testimonal">
+                <!--Use of Aside to indicate supplementary content -->
+                <aside class="right-testimonal">
+                    <figure class="canvas-testimonal">
                         <img src="https://cdn.prod.website-files.com/64b8bca09e0474df27fcc6a9/64c08929eb6b5f73022adf91_Cotation.png" alt="quotation">
-                        <p>msg</p>
-                        <h2>customer name</h2>
-                        <h3>country</h3>
-                    </div>
-                </div>
+                        <!--This is dynamically updated via JS using query selectors, with 
+                            default text placed within in it-->
+                        <blockquote>
+                            <p>msg</p>
+                            <footer id="footer-testimonal">
+                                <h2>customer name</h2>
+                                <h3>country</h3>
+                            </footer>
+                        </blockquote>
+                    </figure>
+                </aside>
             </div>
         </section>
-
+        <!--Featured News/Blog Section-->
         <section class="featured-news">
             <div class="featured-container-news">
-                <h1>Latest blogs</h1>
+                <h2>Latest blogs</h2>
 
                 <div class="news-items">
-                    <div class="item">
+                    <article class="item">
                         <img src="https://cdn.prod.website-files.com/64bdf2da73f4d7db826dcce3/64c1e55d257a06c3e2226cfd_turning-a-new-leaf.jpg" alt="item-image">
-                        <caption>March 19, 2025</caption>
-                        <h2>Turning a New Leaf Embracing Fresh Beginnings</h2>
+                        <!--Use of <time> for date formatting -->
+                        <time datetime="2025-03-19">March 19, 2025</time>
+                        <h3>Turning a New Leaf Embracing Fresh Beginnings</h3>
                         <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="https://cdn.prod.website-files.com/64bdf2da73f4d7db826dcce3/64bf44aaf568407726809d08_a-page-turners-haven.jpg" alt="item-image">
-                        <caption>March 22, 2025</caption>
-                        <h2>Discover New Exciting and Fascinating Genres</h2>
+                        <time datetime="2025-03-22">March 22, 2025</time>
+                        <h3>Discover New Exciting and Fascinating Genres</h3>
                         <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-                    </div>
+                    </article>
 
-                    <div class="item">
+                    <article class="item">
                         <img src="https://cdn.prod.website-files.com/64bdf2da73f4d7db826dcce3/64bdfe177fe70c7963fe2085_literary-wonderland.jpg" alt="item-image">
-                        <caption>March 25, 2025</caption>
-                        <h2>Enchancting New Literature for you</h2>
+                        <time datetime="2025-03-25">March 25, 2025</time>
+                        <h3>Enchancting New Literature for you</h3>
                         <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
-
+        <!--Feautred Promotion Section-->
         <section class="featured-promotions">
             <div class="featured-container-promotions">
-                <h1 id="title">Top Sales this Week!</h1>
-            
-                <div class="item">
-                    <div class="left-image">
-                        <img src="assets/harry-potter-and-the-philosophers-stone.jpg" alt="book-image">
-                    </div>
+                <h2 id="title">Top Sales this Week!</h2>
+                
+                <!--Promotion Items -->
+                <article class="item">
+                    <figure class="left-image">
+                        <img src="assets/harry-potter-and-the-philosophers-stone.jpg"
+                            alt="Book cover of Harry Potter and the Philosopher's Stone by J.K. Rowling">
+                    </figure>
 
                     <div class="right-text">
-                        <h1>Harry Potter and the Philosopher's Stone</h1>
-                        <h1 id="author">J.K Rowling</h1>
-                        <span class="price" id="old-price">£29.00</span>
-                        <span class="price" id="new-price">£7.99</span>
+                        <h3>Harry Potter and the Philosopher's Stone</h3>
+                        <h3 id="author">J.K Rowling</h3>
+                        <!--Use of del for old price and strong for emphasis-->
+                        <del class="price" id="old-price">£29.00</del>
+                        <strong class="price" id="new-price">£7.99</strong>
                         <p id="exercpt">
                             "Harry Potter discovers he's a wizard and attends Hogwarts, where he uncovers secrets about his past and faces dark forces led by Lord Voldemort."
                         </p>
-                        <a href="#">Order now</a>
+                        <a href="pages/catalouge.html" rel="noreferrer noopener">Order now</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="item">
-                    <div class="left-image">
-                        <img src="assets/sapiens-a-brief-history-of-humankind.jpg" alt="book-image">
-                    </div>
+                <article class="item">
+                    <figure class="left-image">
+                        <img src="assets/sapiens-a-brief-history-of-humankind.jpg"
+                            alt="Book cover of Sapiens: A Brief History of Humankind by Yuval Noah Harari">
+                    </figure>
 
                     <div class="right-text">
-                        <h1>Sapiens a Brief History of Humankind<h1>
-                        <h1 id="author">Yuval Noah Harari</h1>
-                        <span class="price" id="old-price">£13.99</span>
-                        <span class="price" id="new-price">£7.99</span>
+                        <h3>Sapiens a Brief History of Humankind<h3>
+                        <h3 id="author">Yuval Noah Harari</h3>
+                        <del class="price" id="old-price">£13.99</del>
+                        <strong class="price" id="new-price">£7.99</strong>
                         <p id="exercpt">
                             "Yuval Noah Harari traces human history, exploring how Homo sapiens rose to dominance and the key events that shaped our world."
                         </p>
-                        <a href="#">Order now</a>
+                        <a href="pages/catalouge.html" rel="noreferrer noopener">Order now</a>
                     </div>
-                </div>
-
-                <div class="item">
+                </article>  
+                <!--Discount Promotion-->
+                <article class="item">
                     <div class="main-text">
-                        <h1>Get 20% off for All new Books using code: <span id="discount-code">20NEW2025</span></h1>
-                        <a href="#">Shop Now</a>
+                        <h3>Get 20% off for All new Books using code: <span id="discount-code">20NEW2025</span></h3>
+                        <a href="pages/catalouge.html" rel="noreferrer noopener">Shop now</a>
                     </div>
-                </div>
-
+                </article>
             </div>
         </section>
     </main>
 
+    <!--Footer section, provides key information and links for more about VoxBooks -->
     <footer>
-        <div class="left-footer">
-            <h1>More about VoxBooks</h1>
+        <!--Short snippet of About VoxBooks -->
+        <section class="left-footer">
+            <h2>More about VoxBooks</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla modi, quo voluptatum debitis corrupti dignissimos ducimus ipsum, voluptas doloremque hic, nihil porro magnam voluptatem!</p>
             <br>
+            <!--Use of copyright entity -->
             <p id="copyright">&copy; 2025 VoxBooks</p>  
-        </div>
+        </section>
         
-        <div class="middle-footer">
-            <h1>Keep Connected</h1>
+        <!--Social Media and Audio Platform Links -->
+        <section class="middle-footer" aria-labelledby="connect-heading">
+            <h2>Keep Connected</h2>
+            <!--Use of aria-labelledby associates section with heading -->
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Spotify">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="spt-img">
                             <p>Spotify (Online Audio Books)</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Soundcloud">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Antu_soundcloud.svg" alt="snd-cld-img">
                             <p>Soundcloud (Online Audio Books)</p>
                         </a>
@@ -275,25 +296,24 @@
 
 
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on Podcast">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg" alt="pdc-img">
                             <p>Podcast (Online Audio Books)</p>
                         </a>
                     </li>
 
-
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Visit VoxBooks on YouTube">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/123qwer.svg" alt="yt-img">
                             <p>YouTube (Online Audio Books)</p>
                         </a>
                     </li>   
                 </ul>
-        </div>
+        </section>
 
-        
-        <div class="right-footer">
-            <h1>Pages</h1>
+        <!--Sitemap / Navigation Links for All Pages -->
+        <section class="right-footer" aria-label="Footer Navigation">
+            <h2>Pages</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pages/catalouge.html">Catalouge</a></li>
@@ -305,11 +325,13 @@
                 <li><a href="pages/our_team.html">Our Team</a></li>
                 <li><a href="pages/contact_us.html">Contact Us</a></li>
             </ul>
-        </div>
+        </section>
     </footer>
 
+    <!--Script for altering the content for the testimonials -->
     <script src="script/testimonials.js"></script>
 
+    <!--Script for the SLICKNAV -->
     <script>
         $(document).ready(function() {
             console.log("jQuery Loaded:", typeof $);

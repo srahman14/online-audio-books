@@ -202,13 +202,13 @@ footer {
     text-align: left;
 }
 
-footer h1 {
+footer h2 {
     font-size: 1.6rem;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.left-footer h1 {
+.left-footer h2 {
     margin-bottom: 1em;
 }
 
@@ -228,7 +228,7 @@ footer h1 {
     font-size: 1.3rem;
 }
 
-.middle-footer h1 {
+.middle-footer h2 {
     margin-bottom: 20px;
 }
 

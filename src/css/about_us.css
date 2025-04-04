@@ -1,9 +1,10 @@
+/* About Us Section */
 #about-section {
     display: flex;
     justify-content: center;
     margin: 2rem;
 }
-
+/* About Us container */
 .about-container {
     width: 70rem;
     margin: 6rem;
@@ -36,30 +37,36 @@
     }
 
     .about-container {
-        width: 90%;  /* Ensures responsiveness */
-        max-width: 600px;  /* Prevents it from stretching too much */
+        /* Ensures responsiveness */
+        width: 90%;  
+        /* Prevents container from stretching too much */
+        max-width: 600px;
         padding: 2rem;
         background: #f1f1f1;
         border-radius: 8px;
-        margin: 2rem auto;  /* Centers properly */
+        /* Centers container */
+        margin: 2rem auto;  
         text-align: center;
     }
 
     .about-container p {
         padding: 1.5rem;
-        margin: 1rem auto;  /* Centers paragraphs */
+        /* Centers paragraphs */
+        margin: 1rem auto;  
         background: #534f4f1a;
         border-radius: 8px;
         font-size: 1.1rem;
-        max-width: 45ch;  /* Controls paragraph width */
+        /* Controls paragraph width for better readability*/
+        max-width: 45ch;  
         font-weight: 500;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 430px) {
+    /* Makes container  more responsive by reducing the width */
     .about-container {
-        width: 95%; /* Makes it even more responsive */
+        width: 95%; 
         max-width: 500px; 
     }
 }

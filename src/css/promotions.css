@@ -1,3 +1,6 @@
+/* This is mainly for the 'listening parties' canvas
+as the promotions page inherits from the home.css file */
+/* List design for different platforms */
 #list-design {
     list-style-type: none;
     padding: 2em;
@@ -11,6 +14,7 @@
     margin-top: 20px;
 }
 
+/* Styling each button according to the platform */
 #spotify-button {
     margin-top: 0;
     background: #1ed760;
@@ -52,28 +56,14 @@
 }
 
 @media (min-width: 767px) {
+    /* reducing the font size of the <a> tags */
     #list-design a {
         font-size: 1.2rem;
     }
-    
-  .featured-container-promotions .item .right-text #exercpt {
-    font-size: 1rem;
-  }
-
-  .featured-container-promotions .item .right-text a {
-    font-size: 1rem;
-  }
-
-  .featured-container-promotions .item:last-child .main-text h1 {
-      font-size: 2rem;
-  }
-
-  .featured-container-promotions .item:last-child .main-text a {
-      font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 479px) {
+    /* reducing the font size of the <a> tags */
     #list-design a {
         font-size: 1rem;
     }
